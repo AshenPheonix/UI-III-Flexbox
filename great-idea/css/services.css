@@ -68,7 +68,8 @@ h1, h2, h3, h4, h5 {
 .container{
 	align-items: center;
 	justify-content: center;
-	display: flex;
+    display: flex;
+    margin:auto;
 }
 
 header{
@@ -106,7 +107,7 @@ nav>*{
 nav a{
 	color:lightgray;
 	text-decoration: none;
-	margin:0 2.5em;
+	margin:0 1.5em;
 	padding:1em 0;
 }
 
@@ -117,7 +118,8 @@ header img:hover{
 }
 
 body{
-	padding:0 1em;
+    max-width: 880px;
+    margin:auto;
 }
 
 footer{
@@ -137,12 +139,23 @@ hr{
 #slist{
     flex-wrap:wrap;
 }
-.floating{
-    margin:1em;
-    padding:1em;
-    background-color:lightgray;
-    border:black 1px solid;
-    width:45%;
+@media only screen and (min-width:601px){
+    .floating{
+        margin:1em;
+        padding:1em;
+        background-color:lightgray;
+        border:black 1px solid;
+        width:45%;
+    }
+}
+@media only screen and (max-width:600px){
+    .floating{
+        margin:1em;
+        padding:1em;
+        background-color:lightgray;
+        border:black 1px solid;
+        width:100%;
+    }
 }
 button{
     margin:1em;
