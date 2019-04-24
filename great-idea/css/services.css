@@ -1,0 +1,153 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Your code starts here! */
+
+.container{
+	align-items: center;
+	justify-content: center;
+	display: flex;
+}
+
+header{
+	text-align: center;
+	position: sticky;
+	top:1px;
+	background-color:white;
+}
+
+@keyframes navigation{
+	from{
+		color:lightgray;
+		background-color:white;
+	}
+	to{
+		background-color:lightgray;
+		color:white;
+	}
+}
+
+nav a:hover{
+	animation: navigation 1s 0s infinite alternate;
+}
+
+nav{
+	color:lightgray;
+	text-align: center;
+	max-height: 200px;
+	padding:1em .5em;
+}
+nav>*{
+	display: inline-block;
+	box-sizing: border-box;
+}
+nav a{
+	color:lightgray;
+	text-decoration: none;
+	margin:0 2.5em;
+	padding:1em 0;
+}
+
+header img:hover{
+	border:1px lightgray solid;
+	border-radius: 10px;
+	box-shadow: inset gray 1px 1px 5px;
+}
+
+body{
+	padding:0 1em;
+}
+
+footer{
+	margin-top: 3em;
+	text-align: center;
+}
+hr{
+	margin:1em 0;
+}
+.services-header-img{
+    display:block;
+    margin:auto;
+    margin-top:1em;
+    margin-bottom:2em;
+}
+
+#slist{
+    flex-wrap:wrap;
+}
+.floating{
+    margin:1em;
+    padding:1em;
+    background-color:lightgray;
+    border:black 1px solid;
+    width:45%;
+}
+button{
+    margin:1em;
+    padding:.5em 2em;
+}
+h2{
+    font-size: 18pt;
+}
